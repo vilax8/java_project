@@ -491,8 +491,24 @@
                         <artifactId>maven-jxr-plugin</artifactId>
                         <version>2.1</version>
                     </plugin>
-                </plugins>
+                </plugins></build>
+            <distributionManagement>
+
+<repository>
+<id>jenkins</id>
+<name>Maven</name>
+        <url>http://52.66.238.188:8081/nexus/content/repositories/jenkins/</url>
+</repository</>
+
+<snapshotRepository>
+<id>jenkinslog</id>
+<name>Maven2snap</name>
+<url>http://52.66.238.188:8081/nexus/content/repositories/jenkinslog/</url>
+</snapshotRepository>
+</distributionManagement>
+
             </reporting>
         </profile>
     </profiles>
+    
 </project>
